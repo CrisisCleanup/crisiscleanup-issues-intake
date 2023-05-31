@@ -58,10 +58,9 @@ body:
       options:
         - Windows
         - Mac/iOS/iPadOS
-        - Chromebook
         - Android
-        - iOS
         - Linux/Unix
+        - Chromebook
         - Other
   - type: dropdown
     id: client-type
