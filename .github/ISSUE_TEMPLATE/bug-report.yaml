@@ -30,7 +30,6 @@ body:
       label: What was supposed to happen?
       description: How was the outcome different from what you expected?
       placeholder: Describe the result and why it was unexpected
-      value: ""
     validations:
       required: true
   - type: checkboxes
@@ -47,12 +46,10 @@ body:
       label: Machine/device
       description: What are you using
       options:
-        - Computer
-        - Laptop
+        - Computer (desktop/laptop)
         - Phone
         - Tablet
         - Other
-      required: true
   - type: dropdown
     id: machine-device-os
     attributes:
@@ -66,7 +63,6 @@ body:
         - iOS
         - Linux/Unix
         - Other
-      required: true
   - type: dropdown
     id: client-type
     attributes:
@@ -74,7 +70,6 @@ body:
       options:
         - Crisis Cleanup through a web browser
         - Crisis Cleanup mobile app
-      required: true
   - type: textarea
     id: machine-device-details
     attributes:
