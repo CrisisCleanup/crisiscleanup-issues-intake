@@ -1,0 +1,30 @@
+name: Feature request
+description: Request a feature
+title: "[FEATURE]: "
+labels: ["feature", "request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        I have an idea
+  - type: textarea
+    id: idea-description
+    attributes:
+      label: What are you thinking?
+      description: Describe what you would like to be supported
+      placeholder: Tell use more
+      value: "I would like to propose "
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current method
+      description: Are you currently doing something else to achieve this?
+      placeholder: What is your current workaround?
+  - type: textarea
+    id: frequency
+    attributes:
+      label: Frequency of need
+      description: How often are you performing/needing this?
+      placeholder: Once a day? Once a week?

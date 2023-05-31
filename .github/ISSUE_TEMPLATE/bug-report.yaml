@@ -1,0 +1,84 @@
+name: Bug report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        What seems to be the issue?
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: Ask for [name] at [email@example.com]
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the issue you're encountering
+      placeholder: List steps that leading to the issue
+      value: "1. Open app and go to to create case screen\n2. Press claim and save\n3. Case does not save as expected"
+    validations:
+      required: true
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: What was supposed to happen?
+      description: How was the outcome different from what you expected?
+      placeholder: Describe the result and why it was unexpected
+      value: ""
+    validations:
+      required: true
+  - type: checkboxes
+    id: reproduction-count
+    attributes:
+      label: Repeated behavior
+      description: How many times did this happen
+      options:
+        - label: Once
+        - label: Multiple times
+  - type: dropdown
+    id: machine-device-type
+    attributes:
+      label: Machine/device
+      description: What are you using
+      options:
+        - Computer
+        - Laptop
+        - Phone
+        - Tablet
+        - Other
+      required: true
+  - type: dropdown
+    id: machine-device-os
+    attributes:
+      label: OS/manufacturer
+      description: What OS are you using
+      options:
+        - Windows
+        - Mac/iOS/iPadOS
+        - Chromebook
+        - Android
+        - iOS
+        - Linux/Unix
+        - Other
+      required: true
+  - type: dropdown
+    id: client-type
+    attributes:
+      label: What are you using
+      options:
+        - Crisis Cleanup through a web browser
+        - Crisis Cleanup mobile app
+      required: true
+  - type: textarea
+    id: machine-device-details
+    attributes:
+      label: Additional information
+      description: What versions are you using?
+      placeholder: Enter other details that may aid in reproducing and fixing the issue (if applicable)
+      value: "OS version: \nBrowser/phone version: \nBrowser name: \nApp version: \nOther details: "
