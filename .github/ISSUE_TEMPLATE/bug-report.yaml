@@ -50,6 +50,8 @@ body:
         - Phone
         - Tablet
         - Other
+    validations:
+      required: true
   - type: dropdown
     id: machine-device-os
     attributes:
@@ -62,6 +64,8 @@ body:
         - Linux/Unix
         - Chromebook
         - Other
+    validations:
+      required: true
   - type: dropdown
     id: client-type
     attributes:
@@ -69,6 +73,8 @@ body:
       options:
         - Crisis Cleanup through a web browser
         - Crisis Cleanup mobile app
+    validations:
+      required: true
   - type: textarea
     id: machine-device-details
     attributes:
